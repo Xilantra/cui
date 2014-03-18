@@ -1493,6 +1493,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .login-bttn:hover {background-color: #6ddaff}
 .login-bttn:focus {background-color: #00a2d8; color: #00506a; font-weight: bold; }
 .login-bttn:active {background-color: #00a2d8; border:transparent}
+                 .social {padding: 10px}
+                 .halpmeh { background: #999; color:#fff;display: block}
+                 .halpmeh a{padding: 10px; text-decoration: none; color: white; display: block}
+                 .smallhr {border-bottom: 1px solid #e1e1e1;}
                  
         .browsehappy {background: coral;color: #fff;padding: .6em; text-align: center;}
         .logo-round-footer-mono {fill: rgba(255, 255, 255, 0.5);width: 30px;height: 30px;margin: 0 auto;display: block}
@@ -1554,10 +1558,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     </div>
     <!-- Do not touch. Footer +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------->
     <footer class="bottom-footer">
-        <div class="container">
+        <div class="container hidden-xs">
                 <hr>
             <div class="col-md-4">Copyright 2014 <a href="http://coralhr.com" title="Website" target="_blank">CoralHR</a></div>
-            <div class="col-md-4  hidden-xs">
+            <div class="col-md-4">
                 <a href="http://coralhr.com" title="Website" target="_blank">
                 <!-- CoralHR Logo -->
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -1586,26 +1590,22 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
                 <a href="#"><i class="fa fa-linkedin"></i></a>&nbsp;
                 <a href="#"><i class="fa fa-google-plus"></i></a>
             </div>
-            <div class="col-md-4 visible-xs">
-                <a href="http://coralhr.com" title="Website" target="_blank">
-                <!-- CoralHR Logo -->
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 231.25 231.25" style="enable-background:new 0 0 231.25 231.25;" class="logo-round-footer-mono"
-                xml:space="preserve">
-                <path class="st208" d="M224.229,80.602c-9.355-29.018-29.455-52.658-56.586-66.563c-16.295-8.351-33.777-12.582-51.961-12.582
-                c-43.086,0-82.045,23.8-101.674,62.115c-28.707,56.013-6.492,124.934,49.527,153.637c16.293,8.35,33.779,12.582,51.961,12.582
-                c43.088,0,82.045-23.8,101.678-62.114C231.082,140.544,233.586,109.621,224.229,80.602z M191.021,104.023
-                c1.768-7.501-0.561-13.544-8.096-13.266c-6.342,0.224-10.236,10.08-11.453,16.71c-1.199,6.642-5.869,17.752-15.26,14.963
-                c-21.678-6.435-16.43-28.552-15.668-32.667c0.752-4.124,11.166-29.248,6.789-35.416c-4.369-6.169-10.91-1.944-12.301,3.5
-                c-0.561,2.22-3.051,10.929-4.039,14.627c-4.461-3.897-10.086-9.159-13.463-9.095c-4.934,0.072-8.59,6.877-4.07,11.885
-                c3.637,4.045,6.783,6.402,11.299,12.5c-1.92,8.127-3.77,14.345-11.834,20.446c-13.316,9.779-24.275,17.854-25.545,18.204
-                c-7.711,2.112,11.891-45.775,7.027-51.77c-4.857-5.989-11.059-7.853-15.451-1.709c-3.705,5.155-26.641,37.304-24.273,32.418
-                c2.936-6.095-2.482-11.585-7.242-10.284c-3.254,0.895-8.889,9.028-12.09,14.029c-1.641-2.722-3.098-5.173-4.203-7.071
-                c1.588-45.303,38.793-81.547,84.477-81.547c46.432,0,84.107,37.435,84.533,83.768C194.867,106.768,190.293,107.123,191.021,104.023z"/>
-                </svg>
-                </a>
-            </div>
         </div>
+<!-- Footer for mobile only ----------------------------------------------------------------------------------------------->
+        <div class="container visible-xs">
+            <div class="col-md-6 halpmeh">
+                <a href="#">Can't login? Need help?</a>
+            </div> 
+            <hr class="smallhr">           
+            <div class="col-md-6">
+                <a href="#"><i class="fa fa-facebook fa-2x social"></i></a>
+                <a href="#"><i class="fa fa-twitter fa-2x social"></i></a>
+                <a href="#"><i class="fa fa-linkedin fa-2x social"></i></a>
+                <a href="#"><i class="fa fa-google-plus fa-2x social"></i></a>
+            </div>
+
+        </div>
+        
     </footer>
     
 <!-- JS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------->
