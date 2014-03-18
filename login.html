@@ -145,8 +145,9 @@ a {
 }
 a:hover,
 a:focus {
-  color: coral;
-  text-decoration: underline;
+  color: white;
+  background: deepskyblue;
+  text-decoration: none;
 }
 a:focus {
   outline: thin dotted;
@@ -1324,6 +1325,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     footer {text-align: center;}
     .bottom-footer {bottom: 0 !important;margin-bottom: 0 !important;position: relative !important;color: #999;font-size: 1.5em;}
     a {color: #999;}
+    a:hover {background: none}
+    
  }
 
 .box {
@@ -1493,17 +1496,24 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .login-bttn:hover {background-color: #6ddaff}
 .login-bttn:focus {background-color: #00a2d8; color: #00506a; font-weight: bold; }
 .login-bttn:active {background-color: #00a2d8; border:transparent}
-.social {padding: 10px}
+.social  {padding: 10px; background: none !important;}
+.social:hover {background: none !important; color: deepskyblue !important;}
 .halpmeh {
     background: #999;
     color:#fff;
-    display: block;
-    -webkit-border-radius: 2px 2px 2px 2px;
-            border-radius: 2px 2px 2px 2px;
+     -webkit-border-radius: 2px 2px 2px 2px;
+             border-radius: 2px 2px 2px 2px;
 }
-.halpmeh a{padding: 10px; text-decoration: none; color: white; display: block}
+.halpmeh a{
+    padding: 10px; 
+     text-decoration: none; 
+     color: white; 
+     display: block;
+     -webkit-border-radius: 2px 2px 2px 2px;
+             border-radius: 2px 2px 2px 2px;
+}
+.halpmeh a:hover, a:focus {background: deepskyblue}
 .smallhr {border-bottom: 1px solid #e1e1e1;}
-                 
 .browsehappy {background: coral;color: #fff;padding: .6em; text-align: center;}
 .logo-round-footer-mono {fill: rgba(255, 255, 255, 0.5);width: 30px;height: 30px;margin: 0 auto;display: block}
 .logo-round-login {fill: coral;width: 95px;height: 95px;margin: 0 auto;display: block}
