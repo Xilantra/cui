@@ -20,7 +20,7 @@
     text-shadow: none;
 	color: white;
 }
-
+/*
 ::-webkit-scrollbar {
     width: 15px;
     height: 13px;
@@ -62,6 +62,7 @@
 ::-webkit-scrollbar-track:hover {
     background: #d1d1d1;
 }
+*/
 /* ==========================================================================
    Browse Happy prompt
    ========================================================================== */
