@@ -11,6 +11,7 @@
     
     <!-- CCSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/flat.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 	
     <!-- Web Font/Icon -->
@@ -22,10 +23,8 @@
  
     </style>
 	
-    <!-- Mp -->
+    <!-- Modernizr -->
         <script src="js/modernizr-2.7.1.min.js"></script>
-	<script src="js/pace.min.js"></script>
-
 </head>
 
 <body>
@@ -97,7 +96,7 @@
 <div class="panel-group" id="accordion">
   
   <div class="panel panel-default">
-    <div class="panel-heading left-sidebar-toggler">
+    <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#dashboard">
           <i class="fa fa-dashboard "></i>
@@ -123,7 +122,7 @@
   </div>
   
   <div class="panel panel-default">
-    <div class="panel-heading left-sidebar-toggler">
+    <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
           <i class="fa fa-cloud"></i>
@@ -148,7 +147,7 @@
   </div>
   
   <div class="panel panel-default">
-    <div class="panel-heading left-sidebar-toggler">
+    <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
           <i class="fa fa-credit-card"></i>
@@ -173,7 +172,7 @@
   </div>
   
   <div class="panel panel-default">
-    <div class="panel-heading left-sidebar-toggler">
+    <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
           <i class="fa fa-check"></i>
@@ -198,7 +197,7 @@
   </div>
   
   <div class="panel panel-default">
-    <div class="panel-heading left-sidebar-toggler">
+    <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
           <i class="fa fa-adjust"></i>
@@ -223,7 +222,7 @@
   </div>
   
   <div class="panel panel-default">
-    <div class="panel-heading left-sidebar-toggler">
+    <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
           <i class="fa fa-bar-chart-o"></i>
@@ -259,7 +258,7 @@
              <hr>
              <p>Write/put anything here. Eg: task, ads, calendar, chat, file uploader, random images, tutorials, search box, calendar, social plugin, or anything simple.</p>
              <h4>Todo &amp; Problems</h4>
-             <p>P:Untuk versi mobile, kena repair topbar punya menu. Current status: berterabur. Nak buat macam Facebook mobile ada 3 item visible kat top navigation dia.</p>
+             <p><i class="fa fa-cogs fa-5x"></i></p>
          </div>
          </div>
         </div> <!-- End sidebar -->
@@ -292,8 +291,9 @@
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="">
-   <a id="open-left" href="#" class="leftbutton" data-dia="Menu" title="Toggle Menu"> </a>
-      <ul class="nav navbar-nav navbar-right">
+    <a id="open-left" href="#" class="leftbutton" data-dia="Menu" title="Toggle Menu"> </a>
+    <i  class="fa fa-plus rightbutton pull-right visible-xs"></i>
+      <ul class="nav navbar-nav navbar-right hidden-xs">
         <li class="active dropdown">
           <a href="#" class="fas dropdown-toggle" data-toggle="dropdown"><i class="fa fa-dashboard fa-2x ico-nav"></i><span class="hidden-xs">Dashboard<b class="caret"></b></span></a>
           <span class="dropdown-arrow qwr"></span>
@@ -350,7 +350,7 @@
         <div class="row">
             <!-- Card Start. Define grid size in col-md-_ (1-12) -->
             <div class="col-md-8">
-                <div class="card">
+                <div class="card card-global">
                 <!-- Card Title --> 
                 <span class="card-title"><i class="fa fa-lightbulb-o icon-space"></i>Basic Card Design</span>
                 <!-- Do not touch. Card Menu Setting -->
@@ -364,7 +364,7 @@
                     
                     <!-- Card content goes here -->
                     <div class="">
-                    <a href="login.html">Login Page</a>
+                    <a class="btn  btn-lg btn-primary" href="login.html">Login page</a>
                     <!-- Button trigger modal -->
 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
   Modal box
@@ -396,7 +396,7 @@
                  
                  <!-- Card 2 Start. Define grid size in col-md-_ (1-12) -->
             <div class="col-md-4">
-                <div class="card">
+                <div class="card card-global">
                 <!-- Card Title --> 
                 <span class="card-title"><i class="fa fa-lightbulb-o icon-space"></i>Basic Card Design</span>
                 <!-- Do not touch. Card Menu Setting -->
@@ -423,7 +423,7 @@
         <div class="row">
             <!-- Card Start. Define grid size in col-md-_ (1-12) -->
             <div class="col-md-3">
-                <div class="card">
+                <div class="card card-global">
                 <!-- Card Title --> 
                 <span class="card-title"><i class="fa fa-lightbulb-o icon-space"></i>Basic Card Design</span>
                 <!-- Do not touch. Card Menu Setting -->
@@ -447,7 +447,7 @@
                  
                  <!-- Card 2 Start. Define grid size in col-md-_ (1-12) -->
             <div class="col-md-6">
-                <div class="card">
+                <div class="card card-global">
                 <!-- Card Title --> 
                 <span class="card-title"><i class="fa fa-lightbulb-o icon-space"></i>Basic Card Design</span>
                 <!-- Do not touch. Card Menu Setting -->
@@ -471,7 +471,7 @@
             
             <!-- Card Start. Define grid size in col-md-_ (1-12) -->
             <div class="col-md-3">
-                <div class="card">
+                <div class="card card-global">
                 <!-- Card Title --> 
                 <span class="card-title"><i class="fa fa-lightbulb-o icon-space"></i>Basic Card Design</span>
                 <!-- Do not touch. Card Menu Setting -->
@@ -499,7 +499,7 @@
         <div class="row">
             <!-- Card Start. Define grid size in col-md-_ (1-12) -->
             <div class="col-md-4">
-                <div class="card">
+                <div class="card card-global">
                 <!-- Card Title --> 
                 <span class="card-title"><i class="fa fa-lightbulb-o icon-space"></i>Basic Card Design</span>
                 <!-- Do not touch. Card Menu Setting -->
@@ -523,7 +523,7 @@
                  
                  <!-- Card 2 Start. Define grid size in col-md-_ (1-12) -->
             <div class="col-md-4">
-                <div class="card">
+                <div class="card card-global">
                 <!-- Card Title --> 
                 <span class="card-title"><i class="fa fa-lightbulb-o icon-space"></i>Basic Card Design</span>
                 <!-- Do not touch. Card Menu Setting -->
@@ -547,7 +547,7 @@
             
             <!-- Card Start. Define grid size in col-md-_ (1-12) -->
             <div class="col-md-4">
-                <div class="card">
+                <div class="card card-global">
                 <!-- Card Title --> 
                 <span class="card-title"><i class="fa fa-lightbulb-o icon-space"></i>Basic Card Design</span>
                 <!-- Do not touch. Card Menu Setting -->
@@ -574,7 +574,7 @@
         <div class="row">
             <!-- Card Start. Define grid size in col-md-_ (1-12) -->
             <div class="col-md-6">
-                <div class="card">
+                <div class="card card-global">
                 <!-- Card Title --> 
                 <span class="card-title"><i class="fa fa-lightbulb-o icon-space"></i>Basic Card Design</span>
                 <!-- Do not touch. Card Menu Setting -->
@@ -598,7 +598,7 @@
                  
                  <!-- Card 2 Start. Define grid size in col-md-_ (1-12) -->
             <div class="col-md-6">
-                <div class="card">
+                <div class="card card-global">
                 <!-- Card Title --> 
                 <span class="card-title"><i class="fa fa-lightbulb-o icon-space"></i>Basic Card Design</span>
                 <!-- Do not touch. Card Menu Setting -->
@@ -625,7 +625,7 @@
         <div class="row">
             <!-- Card Start. Define grid size in col-md-_ (1-12) -->
             <div class="col-md-12">
-                <div class="card">
+                <div class="card card-global">
                 <!-- Card Title --> 
                 <span class="card-title"><i class="fa fa-lightbulb-o icon-space"></i>Basic Card Design</span>
                 <!-- Do not touch. Card Menu Setting -->
@@ -646,9 +646,119 @@
                     
                 </div><!-- /Card End -->
             </div><!-- /Col-md End -->
-                 
         </div><!-- /Row End -->
- </div><!-- /Container End -->
+        
+<h2 class="text-center">Start</h2>  
+<hr>     
+<!-- Row Start +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------->
+        <div class="row">
+            <!-- Card Start. Define grid size in col-md-_ (1-12) -->
+            <div class="col-md-12">
+                <div class="card-global announcement">
+                <!-- Card Title --> 
+                <span class="global-title"><i class="fa fa-bullhorn icon-space"></i>Announcement</span>
+                <!-- Do not touch. Card Menu Setting -->
+                <div class="flipping-menu-content">
+                    <a href="#" title="Previous"><i class="fa fa-angle-left"></i></a>
+                    <a href="#" title="Next"><i class="fa fa-angle-right"></i></a>
+                    <span>|</span>
+                    <a href="#" title="Card Setting"><i class="fa fa-ellipsis-v"></i></a>
+                </div><!-- /flipping-menu-content -->
+                    
+                    <!-- Card content goes here -->
+                    
+                    <a href="#" title="Click to view" alt="">Cupcake ipsum dolor sit amet brownie. Soufflé macaroon soufflé marzipan jujubes. Jelly lollipop... </a>
+                    
+ <!-- /Card Content End -->
+                    
+                </div><!-- /Card-global End -->
+            </div><!-- /Col-md End -->
+        </div><!-- /Row End -->
+
+<!-- Row Start +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------->
+        <div class="row">
+            <!-- Card Start. Define grid size in col-md-_ (1-12) -->
+            <div class="col-md-12">
+                <div class="card-global card">
+                <!-- Card Title --> 
+                <span class="global-title"><i class="fa fa-thumb-tack icon-space"></i>Bulletin</span>
+                <!-- Do not touch. Card Menu Setting -->
+                <div class="flipping-menu-content">
+                    <a href="#" title="View in bar chart"><i class="fa fa-bar-chart-o"></i></a>
+                    <a href="#" title="View in line chart"><i class="fa fa-tasks"></i></a>
+                    <a href="#" title="View in pie chart"><i class="fa fa-adjust"></i></a>
+                    <span>|</span>
+                    <a href="#" title="Card Setting"><i class="fa fa-ellipsis-v"></i></a>
+                </div><!-- /flipping-menu-content -->
+                    
+                    <!-- Card content goes here -->
+                    <div class="list-with-title-n-avatar">
+                        <span class="col-md-4- fa-stack fa-lg pull-left fa">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <span class="col-md-8">
+                    <h6><a href="#" title="Click to view" alt="">Cupcaksdasdasdasdasdasdae ipsum dolor sit amet brownie. Soufflé macaroon soufflé marzipan jujubes.</a></h6>
+                    <p>asndkjasndkjasndkjasdkjasbdkjabsdkjabsdkjbasdkjbaskdjbsakjdsjabjasab</p>
+ </span>
+                    </div><!-- /Card Content End -->
+                     
+                </div><!-- /Card-global End -->
+            </div><!-- /Col-md End -->
+        </div><!-- /Row End -->
+        
+<!-- Row Start +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------->
+        <div class="row">
+            <!-- Card Start. Define grid size in col-md-_ (1-12) -->
+            <div class="col-md-4">
+                <div class="card-global card">
+                <!-- Card Title --> 
+                <span class="global-title"><i class="fa fa-check-square-o icon-space"></i>Poll</span>
+                <!-- Do not touch. Card Menu Setting -->
+                <div class="flipping-menu-content">
+                     <a href="#" title="Card Setting"><i class="fa fa-ellipsis-v"></i></a>
+                </div><!-- /flipping-menu-content -->
+                    
+                    <!-- Card content goes here -->
+                    <div class="poll">
+                         <strong>What do you think about this portal? </strong>
+                         <form action="#">
+                           <p><input type="checkbox" id="test1" /><label for="test1">Ok</label></p>
+                           <p><input type="checkbox" id="test2" checked="checked" /><label for="test2">Ok</label></p>
+                           <p><input type="checkbox" id="test3" checked="checked" disabled="disabled" /><label for="test3">Ok</label></p>
+                           <p><input type="checkbox" id="test4" disabled="disabled" /><label for="test4">Ok</label></p>
+                         </form>
+
+                    </div><!-- /Card Content End -->
+                     
+                </div><!-- /Card-global End -->
+            </div><!-- /Col-md End -->
+            
+          <!-- Card Start. Define grid size in col-md-_ (1-12) -->
+            <div class="col-md-8">
+                <div class="card-global card">
+                <!-- Card Title --> 
+                <span class="global-title"><i class="fa fa-thumb-tack icon-space"></i>v</span>
+                <!-- Do not touch. Card Menu Setting -->
+                <div class="flipping-menu-content">
+                    <a href="#" title="View in bar chart"><i class="fa fa-bar-chart-o"></i></a>
+                    <a href="#" title="View in line chart"><i class="fa fa-tasks"></i></a>
+                    <a href="#" title="View in pie chart"><i class="fa fa-adjust"></i></a>
+                    <span>|</span>
+                    <a href="#" title="Card Setting"><i class="fa fa-ellipsis-v"></i></a>
+                </div><!-- /flipping-menu-content -->
+                    
+                    <!-- Card content goes here -->
+                    <div class=" ">
+       
+                    </div><!-- /Card Content End -->
+                     
+                </div><!-- /Card-global End -->
+            </div><!-- /Col-md End -->
+        </div><!-- /Row End -->
+                                        
+
+  </div><!-- /Container End -->
 
     <!-- Do not touch. Footer +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------->
     <footer>
@@ -710,6 +820,7 @@
         <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/snap.min.js"></script>
+        <script src="js/pace.min.js"></script>
   
         <script type="text/javascript">
         var snapper = new Snap({
@@ -736,7 +847,15 @@
         }
         });
     </script>
- 
+     <!-- Google Analytics -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
 </body>
 
 </html>
