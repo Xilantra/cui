@@ -13,6 +13,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/flat.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/calendar.css" rel="stylesheet">
 	
     <!-- Web Font/Icon -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,600' rel='stylesheet' type='text/css'>
@@ -264,8 +265,8 @@
         </div> <!-- End sidebar -->
    
     <!-- All main content goes here -->
-
-     <!-- Nav Menu -->
+    
+<!-- Nav Menu +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------->
  <nav id="nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -398,7 +399,7 @@
             <div class="col-md-4">
                 <div class="card card-global">
                 <!-- Card Title --> 
-                <span class="card-title"><i class="fa fa-lightbulb-o icon-space"></i>Basic Card Design</span>
+                <span class="card-title"><i class="fa fa-lightbulb-o icon-space"></i>Equal height in a row</span>
                 <!-- Do not touch. Card Menu Setting -->
                 <div class="flipping-menu-content">
                     <a href="#" title="View in bar chart"><i class="fa fa-bar-chart-o"></i></a>
@@ -410,8 +411,15 @@
                     
                     <!-- Card content goes here -->
                     <div class="">
-                    
-                    
+                    <strong>Contoh content panjang:</strong>
+                    24.229,80.602c-9.355-29.018-29.455-52.6 58-56.586-66.563c- 16.295-8.351-3 3.777-12.582-51 .961-12.582
+                c-43.086,0-82.045,23 .8-101.674,6 2.115c-28.707,56.013-6.4 92,1 24.934,49.527,153.637c16.293,8. 35,33.779,12. 582,51.961,12.582
+                c43.088,0,82.045-23.8,101 .678-62.114C231.082,140.544,233. 586,109.621,224 .22 9,80.602z M191.021,104 .023
+                c1.768-7.501-0. 561-13.544-8.096-13.266c-6.342,0.22 4-10.236,10.08-11.453,1 6.71c-1.199,6.642-5.869,1 7.752-15.26,14.963
+                c-21.678-6.435-16.43-28.552- 15.668-32.667c0.752-4.1 6,9.779-24.275,17. 54-25.545,1 8.204
+                c-7.711,2. 112,11.891-45.775, 7.027-51.77c-4.857-5 .989-11.059-7.853-15.451-1.70 9c-3.705,5.155-26.6 41,37.304-24 .273,32.418
+                c2.936-6.09 5-2.482-11.585- 7.242-10.284 c-3.254,0.895-8.8 89,9.028-12.09,14.029c-1. 641-2.722-3.098 -5.173-4. 203-7.071
+                c1.588-45.303,3 8.793-81.547 ,84.477-81.547 c46.432,0,84.107,37.43 5,84.5 33,83.768C19 4.867,106. 768,190.293,107
                     
                     </div><!-- /Card Content End -->
                     
@@ -738,7 +746,7 @@
             <div class="col-md-8">
                 <div class="card-global card">
                 <!-- Card Title --> 
-                <span class="global-title"><i class="fa fa-thumb-tack icon-space"></i>v</span>
+                <span class="global-title"><i class="fa fa-calendar-o icon-space"></i>Events (dari calendar)</span>
                 <!-- Do not touch. Card Menu Setting -->
                 <div class="flipping-menu-content">
                     <a href="#" title="View in bar chart"><i class="fa fa-bar-chart-o"></i></a>
@@ -749,18 +757,59 @@
                 </div><!-- /flipping-menu-content -->
                     
                     <!-- Card content goes here -->
-                    <div class=" ">
-       
+                    <div class="">
+                    <ul id="eventlist" class="nav nav-list"></ul>
+                    
+                    
                     </div><!-- /Card Content End -->
                      
                 </div><!-- /Card-global End -->
             </div><!-- /Col-md End -->
         </div><!-- /Row End -->
                                         
-
+<!-- Row Start +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------->
+        <div class="row">
+            <!-- Card Start. Define grid size in col-md-_ (1-12) -->
+            <div class="col-md-12">
+                <div class="card-global cal-container">
+                <!-- Card Title --> 
+                <span class="global-title"><i class="fa fa-calendar icon-space"></i>Calendar</span>
+                <!-- Do not touch. Card Menu Setting -->
+                <div class="flipping-menu-content">
+                    <div class="btn-group">
+                        <button class="btn btn-primary" data-calendar-nav="prev"><span class="fa">&#xf104;</span> Prev </button>
+                        <button class="btn btn-default" data-calendar-nav="today">Today</button>
+                        <button class="btn btn-primary" data-calendar-nav="next">Next <span class="fa">&#xf105;</span> </button>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-warning" data-calendar-view="year">Year</button>
+                        <button class="btn btn-warning active" data-calendar-view="month">Month</button>
+                        <button class="btn btn-warning" data-calendar-view="week">Week</button>
+                        <button class="btn btn-warning" data-calendar-view="day">Day</button>
+                    </div>
+                    <select id="first_day" class="fa cal-setting" title="Card Setting">
+					<option value="" selected="selected">&#xf142; &nbsp; Card Setting</option>
+					<option value="2">First day of week is Sunday</option>
+					<option value="1">First day of week is Monday</option>
+				</select>
+                    
+                </div><!-- /flipping-menu-content -->
+                    
+                    <!-- Card content goes here -->
+                    <div id="calendar" class="calendar">
+                    
+<!-- Calendar +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------->
+                    
+                    </div><!-- /Card Content End -->
+                    
+                </div><!-- /Card End -->
+            </div><!-- /Col-md End -->
+        </div><!-- /Row End -->
+        
+        
   </div><!-- /Container End -->
 
-    <!-- Do not touch. Footer +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------->
+<!-- Do not touch. Footer +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------->
     <footer>
         <div class="container">
             <hr>
@@ -816,12 +865,86 @@
   
 <!-- JS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <!-- jQuery CDN fallback -->
+<!-- jQuery CDN fallback -->
         <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/snap.min.js"></script>
         <script src="js/pace.min.js"></script>
+
+        <script type="text/javascript" src="js/underscore-min.js"></script>
+        <script type="text/javascript" src="js/jstz.min.js"></script>
+        <script type="text/javascript" src="js/calendar.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>        
   
+<!-- Equal height -->
+        <script type="text/javascript">
+  $.fn.eqHeights = function(options) {
+
+    var defaults = {  
+        child: false ,
+      parentSelector:null
+    };  
+    var options = $.extend(defaults, options); 
+
+    var el = $(this);
+    if (el.length > 0 && !el.data('eqHeights')) {
+        $(window).bind('resize.eqHeights', function() {
+            el.eqHeights();
+        });
+        el.data('eqHeights', true);
+    }
+
+    if( options.child && options.child.length > 0 ){
+        var elmtns = $(options.child, this);
+    } else {
+        var elmtns = $(this).children();
+    }
+
+    var prevTop = 0;
+    var max_height = 0;
+    var elements = [];
+    var parentEl;
+    elmtns.height('auto').each(function() {
+
+      if(options.parentSelector && parentEl !== $(this).parents(options.parentSelector).get(0)){
+        $(elements).height(max_height);
+        max_height = 0;
+        prevTop = 0;
+        elements=[];
+        parentEl = $(this).parents(options.parentSelector).get(0);
+      }
+
+        var thisTop = this.offsetTop;
+
+        if (prevTop > 0 && prevTop != thisTop) {
+            $(elements).height(max_height);
+            max_height = $(this).height();
+            elements = [];
+        }
+        max_height = Math.max(max_height, $(this).height());
+
+        prevTop = this.offsetTop;
+        elements.push(this);
+    });
+
+    $(elements).height(max_height);
+};
+
+// run on load so it gets the size:
+// can't have the same pattern for some reason or it scans the page and makes all the same height. Each row should be separate but it doesn't work that way.
+$(window).load(function() {
+
+//$('[class*="eq-"]').eqHeights();
+  $('.row [class*="col-"]').eqHeights({parentSelector:'.row'});
+/*$('.foo2 [class*="eq-"]').eqHeights();*/
+
+  });         
+        </script>
+                            
+        <script type="text/javascript">
+            var calendar = $('#calendar').calendar();
+        </script>
+          
         <script type="text/javascript">
         var snapper = new Snap({
             element: document.getElementById('content'),
@@ -847,15 +970,6 @@
         }
         });
     </script>
-     <!-- Google Analytics -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-</body>
-
+    
+ </body>
 </html>
