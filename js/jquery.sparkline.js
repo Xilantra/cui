@@ -228,8 +228,8 @@
             // Settings common to most/all chart types
             common: {
                 type: 'line',
-                lineColor: '#00f',
-                fillColor: '#cdf',
+                lineColor: '#008080',
+                fillColor: '#bdd3ff',
                 defaultPixelsPerValue: 3,
                 width: 'auto',
                 height: 'auto',
@@ -252,13 +252,13 @@
             },
             // Defaults for line charts
             line: {
-                spotColor: '#f80',
-                highlightSpotColor: '#5f5',
-                highlightLineColor: '#f22',
-                spotRadius: 1.5,
-                minSpotColor: '#f80',
-                maxSpotColor: '#f80',
-                lineWidth: 1,
+                spotColor: '#FF7F50',
+                highlightSpotColor: '#66CDAA',
+                highlightLineColor: '#B22222',
+                spotRadius: 2,
+                minSpotColor: '#FF7F50',
+                maxSpotColor: '#FF7F50',
+                lineWidth: 2,
                 normalRangeMin: undefined,
                 normalRangeMax: undefined,
                 normalRangeColor: '#ccc',
@@ -271,10 +271,10 @@
             },
             // Defaults for bar charts
             bar: {
-                barColor: '#3366cc',
-                negBarColor: '#f44',
-                stackedBarColor: ['#3366cc', '#dc3912', '#ff9900', '#109618', '#66aa00',
-                    '#dd4477', '#0099c6', '#990099'],
+                barColor: '#007df7',
+                negBarColor: '#c60000',
+                stackedBarColor: ['#3679ff', '#dc3912', '#ff9900', '#009d4e', '#16e07a',
+                    '#dd4477', '#0099c6', '#c733c7'],
                 zeroColor: undefined,
                 nullColor: undefined,
                 zeroAxis: true,
@@ -290,9 +290,9 @@
             tristate: {
                 barWidth: 4,
                 barSpacing: 1,
-                posBarColor: '#6f6',
-                negBarColor: '#f44',
-                zeroBarColor: '#999',
+                posBarColor: '#48D1CC',
+                negBarColor: '#B22222',
+                zeroBarColor: '#d0d0d0',
                 colorMap: {},
                 tooltipFormat: new SPFormat('<span style="color: {{color}}">&#9679;</span> {{value:map}}'),
                 tooltipValueLookups: { map: { '-1': 'Loss', '0': 'Draw', '1': 'Win' } }
@@ -309,10 +309,10 @@
             },
             // Defaults for bullet charts
             bullet: {
-                targetColor: '#f33',
+                targetColor: '#ff8052',
                 targetWidth: 3, // width of the target bar in pixels
-                performanceColor: '#33f',
-                rangeColors: ['#d3dafe', '#a8b6ff', '#7f94ff'],
+                performanceColor: '#007b76',
+                rangeColors: ['#9fe8e5', '#28cec7', '#00bab4'],
                 base: undefined, // set this to a number to change the base start number
                 tooltipFormat: new SPFormat('{{fieldkey:fields}} - {{value}}'),
                 tooltipValueLookups: { fields: {r: 'Range', p: 'Performance', t: 'Target'} }
@@ -320,24 +320,24 @@
             // Defaults for pie charts
             pie: {
                 offset: 0,
-                sliceColors: ['#3366cc', '#dc3912', '#ff9900', '#109618', '#66aa00',
-                    '#dd4477', '#0099c6', '#990099'],
+                sliceColors: ['#3391cc', '#e23b13', '#ff8900', '#109677', '#66aa00',
+                    '#dd4477', '#0984a8', '#a31ba3'],
                 borderWidth: 0,
-                borderColor: '#000',
+                borderColor: '#444',
                 tooltipFormat: new SPFormat('<span style="color: {{color}}">&#9679;</span> {{value}} ({{percent.1}}%)')
             },
             // Defaults for box plots
             box: {
                 raw: false,
-                boxLineColor: '#000',
-                boxFillColor: '#cdf',
+                boxLineColor: 'teal',
+                boxFillColor: '#d5fdff',
                 whiskerColor: '#000',
                 outlierLineColor: '#333',
                 outlierFillColor: '#fff',
-                medianColor: '#f00',
+                medianColor: '#ff7f50',
                 showOutliers: true,
-                outlierIQR: 1.5,
-                spotRadius: 1.5,
+                outlierIQR: 2,
+                spotRadius: 2,
                 target: undefined,
                 targetColor: '#4a2',
                 chartRangeMax: undefined,
@@ -374,9 +374,10 @@
             '}' +
             '.jqsfield { ' +
             'color: white;' +
+            'padding-bottom: 10px;' +
+            'padding-right: 10px;' +
             'font: 11px Open Sans, arial, san serif;' +
             'text-align: left;' +
-            'margin: 5px;' +
             '}';
 
     /**
