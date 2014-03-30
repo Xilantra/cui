@@ -527,6 +527,7 @@
     margin: 10px 0;
     color: #e1e1e1;
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
  }
 
 
