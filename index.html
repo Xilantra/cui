@@ -446,7 +446,7 @@
                     <!-- Card content goes here -->
                     <div class="">
                     
-                    
+
                     
                     </div><!-- /Card Content End -->
                     
@@ -597,8 +597,8 @@
                     <!-- Card content goes here -->
                     <div class="">
                     
-                    
-                    
+
+                                        
                     </div><!-- /Card Content End -->
                     
                 </div><!-- /Card End -->
@@ -802,7 +802,59 @@
             </div><!-- /Col-md End -->
         </div><!-- /Row End -->
         
-        
+<!-- Row Start +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------->
+        <div class="row">
+            <!-- Card Start. Define grid size in col-md-_ (1-12) -->
+            <div class="col-md-6">
+                <div class="card card-global">
+                <!-- Card Title --> 
+                <span class="card-title"><i class="fa fa-bar-chart-o icon-space"></i>Sparkline</span>
+                <!-- Do not touch. Card Menu Setting -->
+                <div class="flipping-menu-content">
+                    <a href="#" title="Card Setting"><i class="fa fa-ellipsis-v"></i></a>
+                </div><!-- /flipping-menu-content -->
+                    
+                    <!-- Card content goes here -->
+                    <div class="sparkline">
+                    
+                    <p>Line: <span class="line">&nbsp;</span></p>
+                    <p>Bar: <span class="bar">&nbsp;</span></p>
+                    <p>Tristate: <span class="tristate">&nbsp;</span></p>
+                    <p>Discrete: <span class="discrete">&nbsp;</span></p>
+                    <p>Bullet: <span class="bullet">&nbsp;</span></p>
+                    <p>Pie: <span class="pie">&nbsp;</span></p>
+                    <p>Box: <span class="box">&nbsp;</span></p>
+                    
+                    </div><!-- /Card Content End -->
+                    
+                </div><!-- /Card End -->
+            </div><!-- /Col-md End -->
+                 
+                 <!-- Card 2 Start. Define grid size in col-md-_ (1-12) -->
+            <div class="col-md-6">
+                <div class="card card-global">
+                <!-- Card Title --> 
+                <span class="card-title"><i class="fa fa-lightbulb-o icon-space"></i>Basic Card Design</span>
+                <!-- Do not touch. Card Menu Setting -->
+                <div class="flipping-menu-content">
+                    <a href="#" title="View in bar chart"><i class="fa fa-bar-chart-o"></i></a>
+                    <a href="#" title="View in line chart"><i class="fa fa-tasks"></i></a>
+                    <a href="#" title="View in pie chart"><i class="fa fa-adjust"></i></a>
+                    <span>|</span>
+                    <a href="#" title="Card Setting"><i class="fa fa-ellipsis-v"></i></a>
+                </div><!-- /flipping-menu-content -->
+                    
+                    <!-- Card content goes here -->
+                    <div class="">
+                    
+                    
+                    
+                    </div><!-- /Card Content End -->
+                    
+                </div><!-- /Card 2 End -->
+            </div><!-- /Col-md End -->
+        </div><!-- /Row End -->
+                
   </div><!-- /Container End -->
 
 <!-- Do not touch. Footer +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------->
@@ -864,6 +916,7 @@
 <!-- jQuery CDN fallback -->
         <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sparkline.js"></script>
         <script src="js/snap.min.js"></script>
         <script src="js/pace.min.js"></script>
 
@@ -936,7 +989,35 @@ $(window).load(function() {
 
   });         
         </script>
-                            
+              
+        <script type="text/javascript">
+            
+$(".line").sparkline([5,6,7,9,9,5,3,2,2,4,6,7], {
+    type: 'line'});
+
+$(".bar").sparkline([5,6,7,2,0,-4,-2,4], {
+    type: 'bar',
+    tooltipSuffix: " widgets"});
+
+$(".tristate").sparkline([1,1,0,1,-1,-1,1,-1,0,0,1,1], {
+    type: 'tristate'});
+
+$(".discrete").sparkline([4,6,7,7,4,3,2,1,4,4], {
+    type: 'discrete'});
+
+
+$(".bullet").sparkline([10,12,12,9,7], {
+    type: 'bullet'});
+
+$(".pie").sparkline([1,1,2], {
+    type: 'pie'});
+
+
+$(".box").sparkline([4,27,34,52,54,59,61,68,78,82,85,87,91,93,100], {
+    type: 'box'});
+
+        </script>                    
+                                                        
         <script type="text/javascript">
             var calendar = $('#calendar').calendar();
         </script>
