@@ -253,7 +253,7 @@
             // Defaults for line charts
             line: {
                 spotColor: '#FF7F50',
-                highlightSpotColor: '#66CDAA',
+                highlightSpotColor: '#44ffbf',
                 highlightLineColor: '#B22222',
                 spotRadius: 2,
                 minSpotColor: '#FF7F50',
@@ -271,7 +271,7 @@
             },
             // Defaults for bar charts
             bar: {
-                barColor: '#007df7',
+                barColor: '#41a1ff',
                 negBarColor: '#c60000',
                 stackedBarColor: ['#3679ff', '#dc3912', '#ff9900', '#009d4e', '#16e07a',
                     '#dd4477', '#0099c6', '#c733c7'],
@@ -320,7 +320,7 @@
             // Defaults for pie charts
             pie: {
                 offset: 0,
-                sliceColors: ['#3391cc', '#e23b13', '#ff8900', '#109677', '#66aa00',
+                sliceColors: ['#3391cc', '#e23b13', '#FF7F50', '#109677', '#66aa00',
                     '#dd4477', '#0984a8', '#a31ba3'],
                 borderWidth: 0,
                 borderColor: '#444',
@@ -329,17 +329,17 @@
             // Defaults for box plots
             box: {
                 raw: false,
-                boxLineColor: 'teal',
+                boxLineColor: '#008080',
                 boxFillColor: '#d5fdff',
-                whiskerColor: '#000',
+                whiskerColor: '#008080',
                 outlierLineColor: '#333',
                 outlierFillColor: '#fff',
                 medianColor: '#ff7f50',
                 showOutliers: true,
                 outlierIQR: 2,
-                spotRadius: 2,
+                spotRadius: 1,
                 target: undefined,
-                targetColor: '#4a2',
+                targetColor: '#22aa76',
                 chartRangeMax: undefined,
                 chartRangeMin: undefined,
                 tooltipFormat: new SPFormat('{{field:fields}}: {{value}}'),
