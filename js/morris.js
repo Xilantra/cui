@@ -1640,7 +1640,7 @@ Licensed under the BSD-2-Clause License.
     Donut.prototype.defaults = {
       colors: ['#ff4d0b', '#ff7f50', '#c73600', '#95BBD7', '#B0CCE1', '#095791', '#095085', '#083E67', '#052C48', '#042135'],
       backgroundColor: '#FFFFFF',
-      labelColor: '#000000',
+      labelColor: '#666',
       formatter: Morris.commas,
       resize: false
     };

@@ -692,6 +692,9 @@ transform: rotate(-180deg);}
 
 .card-global > .global-title {
     color: #e1e1e1;
+    font-weight: 500;
+    font-size: 0.9em;
+     
     -webkit-transition: all 0.2s ease-in-out;
        -moz-transition: all 0.2s ease-in-out;
         -ms-transition: all 0.2s ease-in-out;
@@ -872,3 +875,36 @@ transform: rotate(-180deg);}
 }
 
 
+
+.stats {
+    min-height:160px;
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+ }
+
+.stats-kaler-coral {
+    background: coral;
+}
+
+.stats-display {color: white; text-align: right;}
+.stats-display p{
+    font-weight: 300;
+    font-size: 4em;
+}
+
+
+
+
+
+.stats-kaler-putih {
+    background: #fff;
+}
+
+.stats-display-panjang p{padding: 10px; float: right; color: coral; text-align: right; font-weight: 300; font-size: 4em; border-right: 1px solid #e1e1e1 }
+
+
+
+.stats-display-panjang {
+    width: 100px; display: inline-block; margin-right: 100px; float: right;
+}
